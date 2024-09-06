@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/unitNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Unit Number"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/renovationType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Renovation Type"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/dateBegin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Date Begin"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/weeksTaken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Weeks Taken"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/approve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Approve"
+                android:textSize="10sp"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/green"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="16dp" />
+
+            <Button
+                android:id="@+id/reject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reject"
+                android:textSize="10sp"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/red"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Announcement">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_arrow_back_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Announcement"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <EditText
+                android:id="@+id/announcement_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Enter announcement"
+                android:padding="16dp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_all_residents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginLeft="10dp"
+                android:text="All Residents" />
+
+            <!-- Level buttons and checkboxes -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Repeat this structure for each level -->
+                    <Button
+                        android:id="@+id/button_level_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/grey"
+                        android:text="Level 1"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:id="@+id/dropdown_level_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_level_1_all"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Select All" />
+
+                        <!-- Unit checkboxes for Level 1 -->
+                        <CheckBox
+                            android:id="@+id/checkbox_1_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 1-1" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_1_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 1-2" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_1_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 1-3" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_1_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 1-4" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_1_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 1-5" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_1_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 1-6" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_1_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 1-7" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_1_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 1-8" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_1_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 1-9" />
+
+                        <!-- Add more checkboxes for units 1-3 to 1-9 -->
+                    </LinearLayout>
+
+                    <!-- Repeat above structure for levels 2 to 9 -->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Repeat this structure for each level -->
+                    <Button
+                        android:id="@+id/button_level_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/grey"
+                        android:text="Level 2"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:id="@+id/dropdown_level_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_level_2_all"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Select All" />
+
+                        <!-- Unit checkboxes for Level 1 -->
+                        <CheckBox
+                            android:id="@+id/checkbox_2_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 2-1" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_2_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 2-2" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_2_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 2-3" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_2_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 2-4" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_2_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 2-5" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_2_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 2-6" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_2_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 2-7" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_2_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 2-8" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_2_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 2-9" />
+
+                        <!-- Add more checkboxes for units 1-3 to 1-9 -->
+                    </LinearLayout>
+
+                    <!-- Repeat above structure for levels 2 to 9 -->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Repeat this structure for each level -->
+                    <Button
+                        android:id="@+id/button_level_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/grey"
+                        android:text="Level 3"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:id="@+id/dropdown_level_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_level_3_all"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Select All" />
+
+                        <!-- Unit checkboxes for Level 1 -->
+                        <CheckBox
+                            android:id="@+id/checkbox_3_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 3-1" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_3_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 3-2" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_3_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 3-3" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_3_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 3-4" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_3_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 3-5" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_3_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 3-6" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_3_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 3-7" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_3_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 3-8" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_3_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 3-9" />
+
+                        <!-- Add more checkboxes for units 1-3 to 1-9 -->
+                    </LinearLayout>
+
+                    <!-- Repeat above structure for levels 2 to 9 -->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Repeat this structure for each level -->
+                    <Button
+                        android:id="@+id/button_level_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/grey"
+                        android:text="Level 4"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:id="@+id/dropdown_level_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_level_4_all"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Select All" />
+
+                        <!-- Unit checkboxes for Level 1 -->
+                        <CheckBox
+                            android:id="@+id/checkbox_4_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 4-1" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_4_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 4-2" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_4_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 4-3" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_4_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 4-4" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_4_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 4-5" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_4_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 4-6" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_4_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 4-7" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_4_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 4-8" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_4_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 4-9" />
+
+                        <!-- Add more checkboxes for units 1-3 to 1-9 -->
+                    </LinearLayout>
+
+                    <!-- Repeat above structure for levels 2 to 9 -->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Repeat this structure for each level -->
+                    <Button
+                        android:id="@+id/button_level_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/grey"
+                        android:text="Level 5"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:id="@+id/dropdown_level_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_level_5_all"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Select All" />
+
+                        <!-- Unit checkboxes for Level 1 -->
+                        <CheckBox
+                            android:id="@+id/checkbox_5_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 5-1" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_5_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 5-2" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_5_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 5-3" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_5_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 5-4" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_5_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 5-5" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_5_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 5-6" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_5_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 5-7" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_5_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 5-8" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_5_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 5-9" />
+
+                        <!-- Add more checkboxes for units 1-3 to 1-9 -->
+                    </LinearLayout>
+
+                    <!-- Repeat above structure for levels 2 to 9 -->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Repeat this structure for each level -->
+                    <Button
+                        android:id="@+id/button_level_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/grey"
+                        android:text="Level 6"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:id="@+id/dropdown_level_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_level_6_all"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Select All" />
+
+                        <!-- Unit checkboxes for Level 1 -->
+                        <CheckBox
+                            android:id="@+id/checkbox_6_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 6-1" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_6_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 6-2" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_6_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 6-3" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_6_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 6-4" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_6_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 6-5" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_6_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 6-6" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_6_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 6-7" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_6_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 6-8" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_6_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 6-9" />
+
+                        <!-- Add more checkboxes for units 1-3 to 1-9 -->
+                    </LinearLayout>
+
+                    <!-- Repeat above structure for levels 2 to 9 -->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Repeat this structure for each level -->
+                    <Button
+                        android:id="@+id/button_level_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/grey"
+                        android:text="Level 7"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:id="@+id/dropdown_level_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_level_7_all"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Select All" />
+
+                        <!-- Unit checkboxes for Level 1 -->
+                        <CheckBox
+                            android:id="@+id/checkbox_7_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 7-1" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_7_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 7-2" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_7_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 7-3" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_7_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 7-4" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_7_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 7-5" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_7_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 7-6" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_7_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 7-7" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_7_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 7-8" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_7_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 7-9" />
+
+                        <!-- Add more checkboxes for units 1-3 to 1-9 -->
+                    </LinearLayout>
+
+                    <!-- Repeat above structure for levels 2 to 9 -->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Repeat this structure for each level -->
+                    <Button
+                        android:id="@+id/button_level_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/grey"
+                        android:text="Level 8"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:id="@+id/dropdown_level_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_level_8_all"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Select All" />
+
+                        <!-- Unit checkboxes for Level 1 -->
+                        <CheckBox
+                            android:id="@+id/checkbox_8_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 8-1" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_8_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 8-2" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_8_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 8-3" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_8_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 8-4" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_8_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 8-5" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_8_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 8-6" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_8_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 8-7" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_8_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 8-8" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_8_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 8-9" />
+
+                        <!-- Add more checkboxes for units 1-3 to 1-9 -->
+                    </LinearLayout>
+
+                    <!-- Repeat above structure for levels 2 to 9 -->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Repeat this structure for each level -->
+                    <Button
+                        android:id="@+id/button_level_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/grey"
+                        android:text="Level 9"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:id="@+id/dropdown_level_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_level_9_all"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Select All" />
+
+                        <!-- Unit checkboxes for Level 1 -->
+                        <CheckBox
+                            android:id="@+id/checkbox_9_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 9-1" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_9_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 9-2" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_9_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 9-3" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_9_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 9-4" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_9_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 9-5" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_9_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 9-6" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_9_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 9-7" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_9_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 9-8" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_9_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit 9-9" />
+
+                        <!-- Add more checkboxes for units 1-3 to 1-9 -->
+                    </LinearLayout>
+
+                    <!-- Repeat above structure for levels 2 to 9 -->
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/submit_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/grey"
+                    android:text="Submit"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

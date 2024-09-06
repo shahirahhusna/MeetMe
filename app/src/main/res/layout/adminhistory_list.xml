@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/visitorStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:paddingLeft="20dp"
+                android:layout_marginLeft="10dp"
+                android:paddingRight="20dp"
+                android:fontFamily="@font/open_sans"
+                android:background="@drawable/status_bg"/>
+
+            <TextView
+                android:id="@+id/visitorCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:paddingLeft="20dp"
+                android:layout_marginLeft="10dp"
+                android:paddingRight="20dp"
+                android:fontFamily="@font/open_sans"
+                android:background="@drawable/text_bg"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/visitorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visitor Name"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:paddingLeft="20dp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:fontFamily="@font/amiri_bold"
+            android:background="@drawable/text_bg"/>
+
+        <TextView
+            android:id="@+id/visitorPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="20dp"
+            android:drawableStart="@drawable/baseline_phone_24"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/amiri_bold"/>
+
+        <TextView
+            android:id="@+id/visitDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:drawablePadding="20dp"
+            android:drawableStart="@drawable/outline_calendar_month_24"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/amiri_bold"/>
+
+        <TextView
+            android:id="@+id/visitTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:layout_marginLeft="30dp"
+            android:drawablePadding="20dp"
+            android:drawableStart="@drawable/baseline_access_time_24"
+            android:fontFamily="@font/amiri_bold"/>
+
+        <TextView
+            android:id="@+id/visitorVehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"
+            android:drawablePadding="20dp"
+            android:drawableStart="@drawable/car_24"
+            android:fontFamily="@font/amiri_bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Approved by:"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/adminName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

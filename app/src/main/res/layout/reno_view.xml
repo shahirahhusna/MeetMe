@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RenoView">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageViewCondo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/condo_image" />
+
+        <TextView
+            android:id="@+id/textViewCondoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prima Ria Condominium"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dutamas, 51200 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/textViewContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Office: 03-62501484 | Building Management Manager"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/textViewDocumentContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Generated Document Content Here" />
+
+        <Button
+            android:id="@+id/buttonSharePdf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/grey"
+            android:textColor="@color/black"
+            android:text="Share Document" />
+
+        <Button
+            android:id="@+id/buttonHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/grey"
+            android:textColor="@color/black"
+            android:text="Home" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

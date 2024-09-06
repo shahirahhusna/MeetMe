@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="backgroundColor">#f0ebff</color>
+    <color name="buttonColor">#9B7164</color>
+    <color name="grey">#dbdbdb</color>
+    <color name="darkgrey">#747373</color>
+    <color name="softblue">#A9D6DF</color>
+    <color name="pink">#FFC8C8</color>
+    <color name="gold">#AC985E</color>
+    <color name="softpink">#E8C2C2</color>
+    <color name="yellow">#F4FFB3</color>
+    <color name="softpurple">#F0EBFF</color>
+    <color name="olive">#B9CDCA</color>
+    <color name="green">#8DD59B</color>
+    <color name="red">#EF7D7D</color>
+</resources>

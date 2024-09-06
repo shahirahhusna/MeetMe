@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "885052585030",
+    "project_id": "meet-me-3cf24",
+    "storage_bucket": "meet-me-3cf24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885052585030:android:e2d1094ebaf14b3d020647",
+        "android_client_info": {
+          "package_name": "com.example.meetme"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqrMybQ60VYZqLxnGFDjoZR2MOylGhw2M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
